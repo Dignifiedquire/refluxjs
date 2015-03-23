@@ -10,7 +10,16 @@ module.exports = function(grunt) {
     },
     mochaTest: {
       test: {
+        options: {
+          clearRequireCache: true
+        },
         src: ['test/**/*.spec.js']
+      },
+      testES6: {
+        options: {
+          require: 'babel/register'
+        },
+        src: ['test/**/*.spec6.js']
       }
     },
     browserify: {

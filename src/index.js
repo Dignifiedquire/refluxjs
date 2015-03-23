@@ -20,6 +20,7 @@ exports.listenTo = require('./listenTo');
 
 exports.listenToMany = require('./listenToMany');
 
+exports.Store = require('./Store');
 
 var maker = require('./joins').staticJoinCreator;
 
